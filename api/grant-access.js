@@ -1,4 +1,4 @@
-const { google } = require('googleapis');
+import { google } from 'googleapis';
 
 // CORS headers for Flutter app
 const corsHeaders = {
@@ -113,7 +113,7 @@ async function grantFolderPermission(drive, folderId, userEmail) {
   }
 }
 
-module.exports = async (req, res) => {
+export default async (req, res) => {
   // Handle CORS preflight
   if (req.method === 'OPTIONS') {
     return res.status(200).json({});

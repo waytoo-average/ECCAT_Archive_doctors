@@ -2,6 +2,7 @@
   "name": "study-materials-admin-backend",
   "version": "1.0.0",
   "description": "Backend API for managing Google Drive permissions for study materials admin app",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "dev": "vercel dev",

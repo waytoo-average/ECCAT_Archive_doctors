@@ -1,4 +1,4 @@
-const { google } = require('googleapis');
+import { google } from 'googleapis';
 
 const corsHeaders = {
   'Access-Control-Allow-Origin': '*',
@@ -24,7 +24,7 @@ function getDriveClient() {
   return google.drive({ version: 'v3', auth });
 }
 
-module.exports = async (req, res) => {
+export default async (req, res) => {
   // Handle CORS preflight
   if (req.method === 'OPTIONS') {
     return res.status(200).json({});
