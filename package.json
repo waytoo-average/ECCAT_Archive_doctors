@@ -1,0 +1,17 @@
+{
+  "name": "study-materials-admin-backend",
+  "version": "1.0.0",
+  "description": "Backend API for managing Google Drive permissions for study materials admin app",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vercel dev",
+    "deploy": "vercel --prod"
+  },
+  "dependencies": {
+    "googleapis": "^128.0.0",
+    "cors": "^2.8.5"
+  },
+  "engines": {
+    "node": ">=18.x"
+  }
+}
